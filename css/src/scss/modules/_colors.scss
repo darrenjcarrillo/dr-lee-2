@@ -1,15 +1,16 @@
 // Color Theme Vars
-$color-main: #4d90ff;
-$color-secondary: #1F3C6A;
-$color-third: #4d90ff;
+$color-main: #8E0000;
+$color-secondary: #DA3735;
+$color-third: #B10909;
+$color-third: #910000;
 
-$color-dark: darken(#4d90ff, 20%);
-$color-dark-accent: darken(#4d90ff, 30%);
-$color-extra-dark: darken(#4d90ff, 40%);
+$color-dark: darken(#8E0000, 20%);
+$color-dark-accent: darken(#8E0000, 30%);
+$color-extra-dark: darken(#8E0000, 40%);
 
-$color-light: lighten(#4d90ff, 20%);
-$color-light-accent: lighten(#4d90ff, 30%);
-$color-extra-light: lighten(#4d90ff, 40%);
+$color-light: lighten(#8E0000, 20%);
+$color-light-accent: lighten(#8E0000, 30%);
+$color-extra-light: lighten(#8E0000, 40%);
 
 $color-white: #fff;
 $color-black: #000;
@@ -17,7 +18,7 @@ $color-black: #000;
 $f: $color-white;
 $b: $color-black;
 
-$paragraph_text: #707070;
+$paragraph_text: #000;
 
 // Shorthand scss Variables
 $m: $color-main;

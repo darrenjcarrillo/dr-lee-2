@@ -31,99 +31,14 @@
 
 
 
-
-
 /*------------------------------------*\
 	  # Simple Typography Settings
   \*------------------------------------*/
 // Font Family
 
-// font-family: 'Cinzel', serif;
-// font-family: 'Lato', sans-serif;
-
-// font-family: marine, sans-serif;
-
-// Marine Regular
-// font-weight: 400;
-// font-style: normal;
-
-// Marine Italic
-// font-family: marine, sans-serif;
-// font-weight: 400;
-// font-style: italic;
-
-// Marine Bold
-// font-family: marine, sans-serif;
-// font-weight: 700;
-// font-style: normal;
-
-// Marine Bold Italic
-// font-family: marine, sans-serif;
-// font-weight: 700;
-// font-style: italic;
-
-// Marine Oblicua
-// font-family: marine-oblicua, sans-serif;
-// font-weight: 400;
-// font-style: normal;
-
-// Marine Bold Oblicua
-// font-family: marine-oblicua, sans-serif;
-// font-weight: 700;
-// font-style: normal;
-
-// Marine UP Regular
-// font-family: marine-up, sans-serif;
-// font-weight: 400;
-// font-style: normal;
-
-// Marine UP Bold
-// font-family: marine-up, sans-serif;
-// font-weight: 700;
-// font-style: normal;
-
-
-
-// IvyPresto Headline Italic
-
-// font-family: ivypresto-headline, serif;
-
-// font-weight: 400;
-
-// font-style: italic;
-
-
-// IvyPresto Headline Regular
-
-// font-family: ivypresto-headline, serif;
-
-// font-weight: 400;
-
-// font-style: normal;
-
-
-// IvyPresto Headline Bold
-
-// font-family: ivypresto-headline, serif;
-
-// font-weight: 700;
-
-// font-style: normal;
-
-
-// IvyPresto Headline Bold Italic
-
-// font-family: ivypresto-headline, serif;
-
-// font-weight: 700;
-
-// font-style: italic;
-
-
-
-$font-primary: "ivypresto-headline", serif;
-$font-secondary: "marine", sans-serif;
-$font-third: "marine", sans-serif;
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Montserrat", sans-serif;
+$font-third: "Montserrat", sans-serif;
 
 // Base Font for HTML
 $base-font-size: 18px;
@@ -328,10 +243,14 @@ h6 {
 p {
   margin-bottom: $paragraph-margin;
 
-  font-size: 16px;
+  font-size: 20px;
   color: #272727;
   letter-spacing: 0em;
   line-height: 1.875;
+
+  @media screen and (max-width: 992px) {
+    font-size: 16px;
+  }
 
 
 
