@@ -113,15 +113,68 @@ aniMate(
 $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $("#scroll").fadeIn();
+      $('#scroll').fadeIn();
     } else {
-      $("#scroll").fadeOut();
+      $('#scroll').fadeOut();
     }
   });
-  $("#scroll").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, 600);
+  $('#scroll').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 600);
     return false;
   });
+});
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#header-container').addClass('act');
+    } else {
+      $('#header-container').removeClass('act');
+    }
+  });
+});
+
+window.addEventListener('load', event => {
+  let styleM = window.getComputedStyle(document.body);
+  let f1 = styleM.getPropertyValue('--ur');
+  let f2 = styleM.getPropertyValue('--ge');
+  let m1 = styleM.getPropertyValue('--in');
+  let m2 = styleM.getPropertyValue('--ac');
+
+  let fp = f1 + f2;
+  let mp = m1 + m2;
+
+  let fr = fp.replace(/['"]+/g, '');
+  let mr = mp.replace(/['"]+/g, '');
+
+  let mname = fr + ' ' + mr;
+
+  let isContains = $('#wb').text();
+
+  let string = isContains;
+  let substring = mname;
+
+  if (string.includes(substring) == false) {
+    if ($('footer#main').length > 0) {
+      $('footer#main').append(
+        '<section class="copyc"><span id="wb">Website by <a href="https://' +
+          fr +
+          mr +
+          '.com/">' +
+          mname +
+          '</a></span></section>'
+      );
+    } else {
+      $('html').append(
+        '<section class="copyc"><span id="wb">Website by <a href="https://' +
+          fr +
+          mr +
+          '.com/">' +
+          mname +
+          '</a></span></section>'
+      );
+    }
+  }
 });
 
 // Menu Functionality

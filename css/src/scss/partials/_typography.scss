@@ -129,6 +129,7 @@ h6 {
   // -moz-hyphens: auto;
   // -webkit-hyphens: auto;
   // hyphens: auto;
+  color: #000;
 
   &:first-child {
     margin-top: 0;
@@ -140,7 +141,7 @@ h6 {
 
 h1 {
   font-size: $header-size;
-  margin-bottom: $header-margin;
+  margin-bottom: $header-margin / 1.5;
 
   &.sec-title {
     font-size: rem(50px);
@@ -154,7 +155,7 @@ h1 {
 
 h2 {
   font-size: $header-size / 1.3;
-  margin-bottom: $header-margin / 1.3;
+  margin-bottom: $header-margin / 1.5;
 
   &.sec-title {
     margin-top: 0;
@@ -164,12 +165,9 @@ h2 {
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
-    color: rgba(59, 69, 81, 1);
-
-
+    color: #000;
 
     font-size: 60px;
-    color: #1f3c6a;
     letter-spacing: 0em;
     line-height: 1.1333333333333333;
 
@@ -194,7 +192,6 @@ h3 {
     font-size: rem(36px);
     margin-top: 0;
     font-weight: 400;
-    color: $color-secondary;
     font-family: $font-secondary;
     line-height: 28px;
     letter-spacing: 0.1px;
@@ -244,9 +241,9 @@ p {
   margin-bottom: $paragraph-margin;
 
   font-size: 20px;
-  color: #272727;
+  color: #000;
   letter-spacing: 0em;
-  line-height: 1.875;
+  line-height: 1.5;
 
   @media screen and (max-width: 992px) {
     font-size: 16px;
