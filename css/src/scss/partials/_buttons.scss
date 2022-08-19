@@ -44,9 +44,7 @@
   -webkit-appearance: none;
   cursor: pointer;
 
-  font-family: $font-secondary;
-
-  color: $m;
+  font-family: $font-primary;
 
   display: flex;
   align-items: center;
@@ -58,25 +56,12 @@
 
   font-weight: Bold;
   font-size: 18px;
-  color: #1f3c6a;
-  letter-spacing: 0.05em;
-  line-height: 1.7777777777777777;
+  color: $f;
+  background: $color-main;
+  padding: 10px;
+  border-radius: 30px;
+  width: 320px;
 
-
-
-  &:before {
-    content: close-quote;
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-    width: 50px;
-    height: 9px;
-    background-color: #4D90FF;
-
-    transition: all 0.6s cubic-bezier(0, 0.55, 0.45, 1);
-
-  }
 
   &:after {
     content: close-quote;
@@ -89,26 +74,8 @@
   }
 
   &:hover {
+    color: rgba($f, 0.5);
     text-decoration: none;
-
-    .btn-arrow {
-      transform: scale(0.8);
-
-      svg > g {
-        fill: $color-secondary;
-        stroke: $color-secondary;
-      }
-      svg > g path {
-        fill: $color-secondary;
-      }
-      svg > path {
-        fill: $f;
-      }
-    }
-
-    &:before {
-      left: calc(100% - 50px);
-    }
 
     &:after {
     }

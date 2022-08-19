@@ -91,6 +91,7 @@ section.welcome {
               h3.sec-title {
                 font-size: 30px;
                 font-weight: bold;
+                margin-bottom: 50px;
               }
 
               p {
@@ -102,6 +103,26 @@ section.welcome {
           }
         }
       }
+
+      .red-line-1 {
+        height: 100px;
+        width: 2px;
+        background: $color-secondary;
+        position: absolute;
+        top: 80px;
+        left: 8px;
+      }
+
+      .red-line-2 {
+        height: 100px;
+        width: 2px;
+        background: $color-secondary;
+        position: absolute;
+        bottom: 80px;
+        left: 8px;
+      }
+
+      
 
       .swiper-pagination{
         position: absolute;
