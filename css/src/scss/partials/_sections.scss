@@ -187,6 +187,12 @@ section.welcome {
       cursor: pointer;
     }
 
+    a {
+      &:before {
+        display: none;
+      }
+    }
+
 
     span {
       color: $f;
