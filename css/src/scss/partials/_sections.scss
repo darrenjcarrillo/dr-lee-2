@@ -466,6 +466,10 @@ section.emsella {
       .left-col {
         width: 50%;
 
+        @media screen and (max-width: 1500px) {
+          width: 70%;
+        }
+
         .img {
           width: 100%;
           height: 100%;
@@ -521,7 +525,7 @@ section.emsella {
   
         .red-line {
           height: 400px;
-          width: 2px;
+          width: 5px;
           background: $color-secondary;
           position: absolute;
           // top: 60px;
@@ -532,6 +536,114 @@ section.emsella {
 
     }
   }
+
+}
+
+section.faqs {
+  position: relative;
+  padding: 80px 0;
+
+  .container {
+    max-width: 1500px;
+
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+
+      h2.sec-title {
+        font-size: 50px;
+        margin-bottom: 5px;
+
+      }
+
+      h1.sec-title {
+        font-size: 100px;
+        font-weight: bold;
+      }
+      
+
+
+      .text-content {
+        margin-bottom: 30px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px 30px;
+        border-radius: 30px;
+      }
+
+      button.course-accordion {
+        color: $color-main;
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: left;
+        border: none;
+        background: $f;
+        outline: none;
+      }
+
+
+    
+    /*When the button is active or mouse hovers*/
+    button.course-accordion.active,
+    button.course-accordion:hover {
+        // background-color: rgba(166,166,166,0.6);
+        border: white;
+
+        &:focus {
+          outline: 0 !important;
+        }
+    }
+    
+    /*button not active*/
+    button.course-accordion:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        background: $color-main;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: 300;
+    }
+    
+    /* minus button */
+    button.course-accordion.active:after {
+        content: "\2212";
+        background: $f;
+        color: $color-main;
+        font-weight: 400;
+    }
+    
+    div.course-panel {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        // width: 96%;
+        font-family: "Raleway";
+      
+        letter-spacing: .4px;
+        font-weight: 400;
+        font-style: normal;
+        color: #000;
+        text-align: left;
+    }
+        
+    }
+
+  }
+
 
 }
 
