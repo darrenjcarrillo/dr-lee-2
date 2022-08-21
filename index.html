@@ -26,6 +26,7 @@
     <!-- Main Styles -->
     <link rel="stylesheet" href="public/frontend.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css" rel="stylesheet" />
 
 </head>
 
@@ -116,7 +117,7 @@
     <!-- MAIN CONTENT -->
     <main role="main" class="main">
 
-        <section class="welcome">
+        <!-- <section class="welcome">
             <div class="img">
                 <picture>
                   <source media="(min-width: 576px)" srcset="">
@@ -237,38 +238,111 @@
               </a>
  
             </div>
-        </section>
+        </section> -->
 
-        <!-- <section class="textblock">
-          <div class="container">
-              <div class="content">
-                  <div class="rvl">
-                      <div class="subtitle">
-                          MEDICAL DERMATOLOGY
+        <section class="welcome">
+            <div class="img">
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <picture>
+                            <source media="(min-width: 576px)" srcset="">
+                            <img src="img/welcome@2x.jpg" alt="" class="pic">
+                          </picture>
                       </div>
-                  </div>
-                  <div class="rvl">
-                      <h2 class="sec-title">
-                          Reliable Family, Surgical & Aesthetic Dermatological Care
-                      </h2>
-                  </div>
-                  <div class="rvl">
-                      <p>If you have a medical issue like <a href="" class="alink">moles</a>, <a href=""
-                          class="alink">warts</a>, or <a href="" class="alink">psoriasis</a>, you want your skin in
-                      the care of an expert. Dr. Brezel is a board-certified dermatologic surgeon with over 25 years
-                      of experience in medical, surgical, and aesthetic dermatology. Your skin could not be in better
-                      hands.</p>
-                  </div>
+                      <div class="swiper-slide">
+                        <picture>
+                            <source media="(min-width: 576px)" srcset="">
+                            <img src="img/welcome@2x.jpg" alt="" class="pic">
+                          </picture>
+                      </div>
+                      <div class="swiper-slide">
+                        <picture>
+                            <source media="(min-width: 576px)" srcset="">
+                            <img src="img/welcome@2x.jpg" alt="" class="pic">
+                          </picture>
+                      </div>
+                    </div>
+                    <!-- <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div> -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div>
+                        <h2 class="sec-title">
+                          AESTHETICS
+                        </h2>
+                    </div>
+                    <div>
+                      <h1 class="sec-title">
+                        REFINE
+                      </h1>
+                    </div>
+                    <div >
+                      <h3 class="sec-title">
+                        BY DR. LEE
+                      </h3>
+                    </div>
+
+                    <div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                      </p>
+                    </div>
+
+                    <div class="red-line-1"></div>
+                    <div class="red-line-2"></div>
+
+
                   <div class="rvl">
                       <div class="btn-container">
                           <a href="" class="ui-btn">
-                              BETTER SKIN STARTS HERE
+                              REQUEST APPOINTMENT
                           </a>
                       </div>
                   </div>
+                </div>
+
+
+            </div>
+
+            <div class="scroll-arrow">
+              <a href="#">
+                <span>SCROLL DOWN</span>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 45.912 25">
+                    <path id="Path_3" data-name="Path 3" d="M880.4,1034.342l21.062,27.043,4.33-5.6,16.57-21.44" transform="translate(-878.431 -1032.806)" fill="none" stroke="#fff" stroke-width="5"/>
+                  </svg>                    
+                </span>
+              </a>
+ 
+            </div>
+        </section>
+
+        <section class="textblock">
+          <div class="container">
+              <div class="content">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(https://picsum.photos/1920/1080?image=991)">
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(https://picsum.photos/1920/1080?image=1081)">
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(https://picsum.photos/1920/1080?image=1064)">
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(https://picsum.photos/1920/1080?image=1000)">
+                    </div>'
+                  </div>
+                  <div class="swiper-button-next swiper-button-white"></div>
+                  <div class="swiper-button-prev swiper-button-white"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
               </div>
           </div>
-      </section> -->
+      </section>
 
        
 
@@ -500,6 +574,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -511,17 +587,18 @@
         // noSwiping: true,
         // noSwipingClass: 'swiper-slide',
         direction: "vertical",
-        // autoplay: {
-        //   delay: 10000,
-        // },
+        autoplay: {
+          delay: 10000,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
+        
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
           // Responsive breakpoints
       });
     </script>
