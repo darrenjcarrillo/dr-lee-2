@@ -86,6 +86,11 @@
     }
   }
 
+  &.ui-btn-white {
+    background: $f;
+    color: #000;
+  }
+
   &.ui-line{
     position: relative;
     line-height: 19px;
