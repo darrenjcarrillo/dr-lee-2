@@ -354,7 +354,12 @@ section.welcome {
         background: $color-secondary;
         position: absolute;
         top: 40px;
-        left: -27px
+        left: -27px;
+
+        @media screen and (max-width: 1400px) {
+          top: 0;
+          height: 100px;
+        }
       }
 
       .red-line-2 {
@@ -363,7 +368,12 @@ section.welcome {
         background: $color-secondary;
         position: absolute;
         bottom: 120px;
-        left: -27px
+        left: -27px;
+
+        @media screen and (max-width: 1400px) {
+          bottom: 100px;
+          height: 80px;
+        }
       }
     }
   }
@@ -482,6 +492,11 @@ section.what-is-emsella {
         p {
           font-weight: bold;
           margin-bottom: 0;
+          padding-right: 80px;
+
+          @media screen and (max-width: 1200px) {
+            padding-right: 50px;
+          }
         }
   
         .btn-container {
@@ -723,13 +738,11 @@ section.faqs {
       text-align: center;
 
       h2.sec-title {
-        font-size: 50px;
         margin-bottom: 5px;
 
       }
 
       h1.sec-title {
-        font-size: 100px;
         font-weight: bold;
       }
       
@@ -808,6 +821,7 @@ section.faqs {
         justify-content: center;
         font-size: 50px;
         font-weight: 300;
+
     }
     
     /* minus button */
@@ -817,6 +831,7 @@ section.faqs {
         color: $color-main;
         font-weight: 400;
     }
+
     
     div.course-panel {
         padding: 0 18px;
@@ -945,7 +960,6 @@ section.about {
   }
 
 }
-
 
 section.form {
   position: relative;

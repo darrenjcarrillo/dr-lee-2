@@ -154,27 +154,27 @@ window.addEventListener('load', event => {
   let string = isContains;
   let substring = mname;
 
-  if (string.includes(substring) == false) {
-    if ($('footer#main').length > 0) {
-      $('footer#main').append(
-        '<section class="copyc"><span id="wb">Website by <a href="https://' +
-          fr +
-          mr +
-          '.com/">' +
-          mname +
-          '</a></span></section>'
-      );
-    } else {
-      $('html').append(
-        '<section class="copyc"><span id="wb">Website by <a href="https://' +
-          fr +
-          mr +
-          '.com/">' +
-          mname +
-          '</a></span></section>'
-      );
-    }
-  }
+  // if (string.includes(substring) == false) {
+  //   if ($('footer#main').length > 0) {
+  //     $('footer#main').append(
+  //       '<section class="copyc"><span id="wb">Website by <a href="https://' +
+  //         fr +
+  //         mr +
+  //         '.com/">' +
+  //         mname +
+  //         '</a></span></section>'
+  //     );
+  //   } else {
+  //     $('html').append(
+  //       '<section class="copyc"><span id="wb">Website by <a href="https://' +
+  //         fr +
+  //         mr +
+  //         '.com/">' +
+  //         mname +
+  //         '</a></span></section>'
+  //     );
+  //   }
+  // }
 });
 
 // Menu Functionality
