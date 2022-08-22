@@ -254,86 +254,63 @@ $(document).ready(function() {
 });
 // form submit
 // ---------------------------------------------------------------------------------------------------
-$("#schedule").submit(function(e) {
-  e.preventDefault();
-  var form = $(this);
-  var form_results = $("#form-results");
+jQuery(document).ready(function($) {
+  $("#schedule").submit(function(e) {
+    e.preventDefault();
+    var form = $(this);
+    var form_results = $("#form-results");
 
-  form_results.html(" ");
-  form_results.removeClass("alert");
-  form_results.removeClass("alert-error");
-  form_results.removeClass("alert-success");
+    form_results.html(" ");
+    form_results.removeClass("alert");
+    form_results.removeClass("alert-error");
+    form_results.removeClass("alert-success");
 
-  form.find(".btn").prop("disabled", true);
+    form.find(".btn").prop("disabled", true);
 
-  var errors = [];
+    var errors = [];
 
-  // Validation
-  if (form.find("input[name=name]").val() == "") {
-    errors.push("The name field is required");
-  }
-  if (form.find("input[name=email]").val() == "") {
-    errors.push("The email field is required");
-  }
-  if (!form.find('select[name="preferred_day"]').val()) {
-    errors.push("The day of the week field is required");
-  }
-  if (!form.find('select[name="preferred_time"]').val()) {
-    errors.push("The time of day field is required");
-  }
-
-  if (errors.length > 0) {
-    var error_html = '<ul class="mb-0">';
-    form_results.addClass("alert");
-    form_results.addClass("alert-info");
-
-    $.each(errors, function(index, value) {
-      error_html += "<li>" + value + "</li>";
-    });
-    error_html += "</ul>";
-
-    form_results.html(error_html);
-    form.find(".btn").prop("disabled", false);
-    return false;
-  }
-
-  var data = {
-    action: 'do_ajax',
-    fn: 'schedule',
-    data: form.serializeArray(),
-    security: the_theme.ajax_nonce,
-    siteurl: the_theme.url,
-  };
-
-
-
-  $.post(the_theme.url + '/wp-admin/admin-ajax.php', data, function(response) {
-
-    response = JSON.parse(response);
-    
-    console.log(response);
-
-    $("#form-results").hide(0);
-
-    $(".formpwrap").fadeOut(function(){
-      form_results.append( response );
-      setTimeout(function(){
-        $("#form-results").fadeIn();
-      },600);
-    });
-
-    $(form).each(function() {
-      this.reset();
-    });
-
-    form.find('.btn').prop('disabled', false);
-
-    if (response.type == 'success') {
-      // window.location.href = the_theme.url + '/thank-you';
+    // Validation
+    if (form.find("input[name=name]").val() == "") {
+      errors.push("The name field is required");
+    }
+    if (form.find("input[name=email]").val() == "") {
+      errors.push("The email field is required");
     }
 
+    if (errors.length > 0) {
+      var error_html = '<ul class="mb-0">';
+      form_results.addClass("alert");
+      form_results.addClass("alert-info");
+
+      $.each(errors, function(index, value) {
+        error_html += "<li>" + value + "</li>";
+      });
+      error_html += "</ul>";
+
+      form_results.html(error_html);
+      form.find(".btn").prop("disabled", false);
+      return false;
+    }
+
+    var data = {
+      action: "schedule",
+      data: form.serialize(),
+    };
+
+    jQuery.post(
+      "ajax.php",
+      data,
+      function(response) {
+        form.find(".btn").prop("disabled", false);
+        $("#form-results").html(response);
+        // Use window.location to move user to thank you page, page template
+        window.location = "/thank-you";
+      },
+      "json"
+    );
   });
 });
+
 // form
 
 // Load Images Async switch src attribute with data-lazysrc

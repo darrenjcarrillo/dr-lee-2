@@ -582,105 +582,76 @@
 
           </div>
         </section>
-
-        <section class="textblock">
-          <div class="container">
-              <div class="content">
-                <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(https://picsum.photos/1920/1080?image=991)">
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(https://picsum.photos/1920/1080?image=1081)">
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(https://picsum.photos/1920/1080?image=1064)">
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(https://picsum.photos/1920/1080?image=1000)">
-                    </div>'
-                  </div>
-                  <div class="swiper-button-next swiper-button-white"></div>
-                  <div class="swiper-button-prev swiper-button-white"></div>
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
-          </div>
-        </section>
-
     </main>
 
     <!-- Request an Appointment -->
     <section class="form">
+        <div class="img">
+          <picture>
+            <source media="(min-width: 576px)" srcset="">
+            <img src="img/request-appointment-bg.jpg" alt="Older woman wearing a red blazer" class="pic">
+          </picture>
+        </div>
         <div class="container">
-
-            <!-- <div class="img">
-                <img src="img/requestappointment@2x.jpg" alt="" class="pic">
-            </div> -->
-
             <div class="formcontent">
                 <div class="content">
                     <div class="rvl">
-                        <h2 class="sec-title">Request Appointment</h2>
+                        <h2 class="sec-title">REQUEST AN</h2>
                     </div>
                     <div class="rvl">
-                        <p>
-                            We look forward to helping you with all your dermatological needs at Title! To
-                            schedule an appointment now, please fill out and submit the form below.
-                        </p>
+                      <h1 class="sec-title">
+                        APPOINTMENT
+                      </h1>
                     </div>
                 </div>
                 <form id="schedule" name="scheduleform" class="img-shadow appointment-wrapper">
-                    <div class="formpwrap">
-                        <!-- First -->
-                        <div class="input rvl">
-                            <input type="text" name="firstname" placeholder="First Name" class="form-control" required />
-                        </div>
+                  <div class="formpwrap">
 
-                        <!-- Last -->
-                        <div class="input rvl">
-                            <input type="text" name="lastname" placeholder="Last Name" class="form-control" required />
-                        </div>
+                    <div class="top-col">
+                      <!-- Fullname -->
+                      <div class="input rvl">
+                        <input type="text" name="name" placeholder="Full Name" class="form-control" required />
+                      </div>
 
-                        <!-- Email -->
-                        <div class="input rvl">
-                            <input type="text" placeholder="Email" name="email" class="form-control" />
-                        </div>
+                      <!-- Phone -->
+                      <div class="input rvl">
+                        <input type="text" placeholder="Phone Number" name="phone" class="form-control" />
+                      </div>
 
-                        <!-- Phone -->
-                        <div class="input rvl">
-                            <input type="text" placeholder="Phone Number" name="phone" class="form-control" />
-                        </div>
+                      <!-- Email -->
+                      <div class="input rvl">
+                        <input type="text" placeholder="Email" name="email" class="form-control" />
+                      </div>
 
-                        <!-- Preferred Time -->
-                        <div class="input rvl">
-                            <select name="preferred_time" class="form-control" required>
-                                <option value="" disabled selected>Treatment (Optional)</option>
-                                <option value="Early Morning">Early Morning</option>
-                                <option value="Late Morning">Late Morning</option>
-                                <option value="Early Afternoon">Early Afternoon</option>
-                                <option value="Late Afternoon">Late Afternoon</option>
-                            </select>
-                        </div>
-
-                        <!-- Preferred Day -->
-                        <div class="input rvl">
-                            <select name="preferred_day" class="form-control" required>
-                                <option value="" disabled selected>Date/Time (Optional)</option>
-                                <option value="Monday">Monday</option>
-                                <option value="Tuesday">Tuesday</option>
-                                <option value="Wednesday">Wednesday</option>
-                                <option value="Thursday">Thursday</option>
-                                <option value="Friday">Friday</option>
-                                <option value="Saturday">Saturday</option>
-                            </select>
-                        </div>
-
-                        <!-- Submit Button -->
-                        <div class="f-submit rvl">
-                            <button type="submit" class="ui-btn ui-submit">
-                                REQUEST APPOINTMENT
-                            </button>
-                        </div>
-
+                      <!-- Services -->
+                      <div class="input rvl">
+                          <select name="service_selection" class="form-control input-services" required>
+                              <option value="" disabled selected>
+                                Service Selection
+                              </option>
+                              <option value="Test">Test</option>
+                              <option value="Test">Test</option>
+                              <option value="Test">Test</option>
+                              <option value="Test">Test</option>
+                          </select>
+                      </div>
                     </div>
+
+                    <div class="bottom-col">
+                      <!-- Message -->
+                      <div class="text-box rvl">
+                        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="COMMENTS"></textarea>
+                      </div>
+
+
+                      <!-- Submit Button -->
+                      <div class="f-submit rvl">
+                          <button type="submit" class="ui-btn">
+                              SECHEDULE
+                          </button>
+                      </div>
+                    </div>
+                  </div>
                 </form>
 
                 <div id="form-results"></div>
