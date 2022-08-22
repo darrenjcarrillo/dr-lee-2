@@ -487,7 +487,6 @@ The startTranslate doesn't exist on initial load so we use the initialSlide inde
       // -----unrelated settings start -----
       // grabCursor: true,
       keyboard: true,
-
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
