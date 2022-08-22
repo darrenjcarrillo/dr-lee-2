@@ -62,6 +62,10 @@
   border-radius: 30px;
   width: 320px;
 
+  @media screen and (max-width: 1350px) {
+    font-size: 15px;
+  }
+
 
   &:after {
     content: close-quote;
