@@ -248,6 +248,7 @@ section.welcome {
         // }
         @media screen and (max-width: 700px) {
           opacity: 0.3;
+          object-position: right;
         }
       }
     }
@@ -273,7 +274,6 @@ section.welcome {
       height: 10px;
       width: 100px;
       border-radius: 1px;
-      // margin: 0 5px;
       background: transparent;
       height: 18px;
       width: 18px;
@@ -318,7 +318,6 @@ section.welcome {
 
     .content {
       width: 45%;
-      // padding-left: 35px;
 
       @media screen and (max-width: 1600px) {
         width: 50%;
@@ -429,11 +428,9 @@ section.what-is-emsella {
   // min-height: 900px;
   display: flex;
   align-items: center;
-  // margin-top: 100px;
 
   @media screen and (max-width: 992px) {
     align-items: flex-end;
-    // min-height: 700px;
   }
   
 
@@ -453,7 +450,6 @@ section.what-is-emsella {
       width: 100%;
       display: flex;
       align-items: center;
-      // padding-left: 35px;
 
       @media screen and (max-width: 992px) {
         flex-direction: column-reverse;
@@ -538,7 +534,6 @@ section.what-is-emsella {
           width: 5px;
           background: $color-secondary;
           position: absolute;
-          // top: 60px;
           right: 0;
         }
   
@@ -624,6 +619,10 @@ section.how-it-works {
           background-size: cover;
           background-position: center;
           padding: 30px 50px 70px 50px;
+
+          @media screen and (max-width: 500px) {
+            background-image: none;
+          }
         }
 
 
@@ -671,14 +670,11 @@ section.how-it-works {
 
 section.what-it-treats {
   position: relative;
-  // min-height: 900px;
   display: flex;
   align-items: center;
-  // margin-top: 100px;
 
   @media screen and (max-width: 992px) {
     align-items: flex-end;
-    // min-height: 700px;
   }
   
 
@@ -698,7 +694,6 @@ section.what-it-treats {
       width: 100%;
       display: flex;
       align-items: center;
-      // padding-left: 35px;
       justify-content: flex-end;
 
       @media screen and (max-width: 992px) {
@@ -790,7 +785,6 @@ section.what-it-treats {
           width: 5px;
           background: $color-secondary;
           position: absolute;
-          // top: 60px;
           left: 20px;
 
           @media screen and (max-width: 992px) {
@@ -880,6 +874,13 @@ section.faqs {
         @media screen and (max-width: 1350px) {
           font-size: 20px;
         }
+
+        @media screen and (max-width: 500px) {
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
       }
 
 
@@ -936,6 +937,10 @@ section.faqs {
         color: #000;
         text-align: left;
         height: 100%;
+
+        @media screen and (max-width: 500px) {
+          padding: 0;
+        }
     }
         
     }
@@ -947,15 +952,12 @@ section.faqs {
 
 section.about {
   position: relative;
-  // min-height: 900px;
   background: $f;
   display: flex;
   align-items: center;
-  // margin-top: 100px;
 
   @media screen and (max-width: 992px) {
     align-items: flex-end;
-    // min-height: 700px;
   }
   
   .container {
@@ -973,7 +975,6 @@ section.about {
       width: 100%;
       display: flex;
       align-items: center;
-      // padding-left: 35px;
 
       @media screen and (max-width: 992px) {
         flex-direction: column-reverse;
@@ -990,9 +991,10 @@ section.about {
           width: 100%;
         }
 
-        .img {
+        picture {
           width: 100%;
           height: 100%;
+
           img {
             object-fit: cover;
             object-position: center;
@@ -1000,7 +1002,8 @@ section.about {
             width: 100%;
 
           }
-        } 
+        }
+
       }
 
       .right-col {
@@ -1066,7 +1069,6 @@ section.about {
           width: 5px;
           background: $f;
           position: absolute;
-          // top: 60px;
           right: 50px;
 
           @media screen and (max-width: 600px) {

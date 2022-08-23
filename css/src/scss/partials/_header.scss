@@ -104,9 +104,9 @@
       padding: 20px 15px;
       justify-content: space-between;
 
-      // @media screen and (max-width: 500px) {
-      //   padding: 0 20px
-      // }
+      @media screen and (max-width: 1012px) {
+        padding-right: 0;
+      }
 
       .content {
         display: flex;
@@ -343,6 +343,10 @@ nav.navdiv {
           line-height: 1.6;
           border-right: $color-main;
           font-family: $font-primary;
+
+          @media screen and (max-width: 1112px) {
+            font-size: 14px;
+          }
 
           @media screen and (max-width: 992px) {
             color: $f;

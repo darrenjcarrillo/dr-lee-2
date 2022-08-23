@@ -505,26 +505,6 @@ const demo = new SwiperDemo();
 
 // ---------------------------------------------------------------------------------------------------
 // ACCORDION
-// const accordion = document.getElementsByClassName('content-wrap');
-
-// for (i=0; i<accordion.length; i++) {
-//   accordion[i].addEventListener('click', function () {
-//     this.classList.toggle('active')
-//   })
-// }
-
-$(".btn-toggle-show").click(toggleText(".inner-content"));
-
-function toggleText(element) {
-  return function(e){
-    $(this).parent().find(element).slideToggle(300);  
-    $(this).parent().find(element).toggleClass("para-hide");
-    $(this).find(".plus-minus").toggleClass("rotate");
-  }
-}
-
-
-// FAQ2
 	//this is the button
 	var acc = document.getElementsByClassName("course-accordion");
 	var i;
