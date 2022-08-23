@@ -27,9 +27,6 @@
       margin: 0 auto;
       padding: 0;
 
-      @media screen and (max-width: 500px) {
-        padding: 0 20px
-      }
 
       .content {
         display: flex;
@@ -107,9 +104,9 @@
       padding: 20px 15px;
       justify-content: space-between;
 
-      @media screen and (max-width: 500px) {
-        padding: 0 20px
-      }
+      // @media screen and (max-width: 500px) {
+      //   padding: 0 20px
+      // }
 
       .content {
         display: flex;
@@ -193,7 +190,7 @@ nav.navdiv {
 
     @media screen and (max-width: 992px) {
       position: absolute;
-      bottom: 25px;
+      bottom: 40px;
     }
 
     .bars {

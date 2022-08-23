@@ -264,9 +264,9 @@ section.welcome {
       align-items: center;
 
 
-      // @media screen and (max-width: 500px) {
-      //   bottom: 0px;
-      // }
+      @media screen and (max-width: 600px) {
+        left: -12px;
+      }
     }
 
     .swiper-pagination-bullet{
@@ -310,6 +310,10 @@ section.welcome {
     align-items: flex-start;
     margin-left: 65px;
     padding-left: 0;
+
+    @media screen and (max-width: 600px) {
+      margin-left: 40px;
+    }
 
 
     .content {
@@ -440,6 +444,10 @@ section.what-is-emsella {
     display: flex;
     padding: 40px 50px;
 
+    @media screen and (max-width: 992px) {
+      padding: 50px 15px;
+    }
+
 
     .content {
       width: 100%;
@@ -447,11 +455,20 @@ section.what-is-emsella {
       align-items: center;
       // padding-left: 35px;
 
+      @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+      }
+
       .left-col {
         width: 50%;
 
         @media screen and (max-width: 1500px) {
           width: 70%;
+        }
+
+        
+        @media screen and (max-width: 992px) {
+          width: 100%;
         }
 
         .img {
@@ -478,6 +495,13 @@ section.what-is-emsella {
         padding: 30px 0px 30px 100px;
         backdrop-filter: blur(12px);
         background: rgba(250, 250, 250, 0.3);
+
+        @media screen and (max-width: 992px) {
+          position: relative;
+          width: 100%;
+          right: 0;
+          padding: 0 0 30px 0;
+        }
 
         h2.sec-title {
           margin-bottom: 5px;
@@ -531,6 +555,10 @@ section.how-it-works {
   align-items: center;
   height: 700px;
 
+  @media screen and (max-width: 992px) {
+    height: 100%;
+  }
+
 
   .container {
     padding: 0;
@@ -544,9 +572,22 @@ section.how-it-works {
       background: rgb(226,9,9);
       background: linear-gradient(90deg, rgba(226,9,9,1) 0%, rgba(145,0,0,1) 39%, rgba(88,1,1,1) 71%);
 
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+      }
+    
+
       .col-content {
         width: 25%;
         height: 100%;
+
+        @media screen and (max-width: 992px) {
+         width: 42%;
+        }
+
+        @media screen and (max-width: 700px) {
+          width: 100%;
+         }
 
         picture {
           width: 100%;
@@ -556,6 +597,10 @@ section.how-it-works {
             object-fit: cover;
             width: 100%;
             height: 100%;
+
+            @media screen and (max-width: 992px) {
+              height: 600px;  
+            }
           }
         }
       }
@@ -567,6 +612,11 @@ section.how-it-works {
         align-items: center;
         text-align: center;
         justify-content: flex-end;
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+          margin: 50px 0 0;
+        }
 
         .image-bg  {
           background-image: url("/img/swirls-bg-2.png");
@@ -587,6 +637,10 @@ section.how-it-works {
           color: $f;
           font-weight: bold;
           margin-bottom: -7px;
+
+          @media screen and (max-width: 992px) {
+            margin-bottom: 0;
+          }
         }
   
         h3.sec-title {
@@ -635,6 +689,10 @@ section.what-it-treats {
     display: flex;
     padding: 40px 50px;
 
+    @media screen and (max-width: 992px) {
+      padding: 50px 15px;
+    }
+
 
     .content {
       width: 100%;
@@ -642,6 +700,10 @@ section.what-it-treats {
       align-items: center;
       // padding-left: 35px;
       justify-content: flex-end;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+      }
 
       .left-col {
         width: 60%;
@@ -656,6 +718,10 @@ section.what-it-treats {
 
         @media screen and (max-width: 1030px) {
           width: 85%;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
         }
 
 
@@ -686,6 +752,13 @@ section.what-it-treats {
 
         @media screen and (max-width: 1200px) {
           padding: 30px 50px;
+        }
+
+        @media screen and (max-width: 992px) {
+          position: relative;
+          width: 100%;
+          padding: 0 0 30px;
+          padding-left: 20px;
         }
 
         h2.sec-title {
@@ -719,6 +792,10 @@ section.what-it-treats {
           position: absolute;
           // top: 60px;
           left: 20px;
+
+          @media screen and (max-width: 992px) {
+            left: 0px;
+          }
         }
   
       }
@@ -742,6 +819,9 @@ section.faqs {
       justify-content: center;
       flex-direction: column;
       text-align: center;
+
+      
+
 
       h2.sec-title {
         margin-bottom: 5px;
@@ -780,6 +860,10 @@ section.faqs {
         padding: 20px 30px;
         border-radius: 30px;
         background: $f;
+
+        @media screen and (max-width: 600px) {
+          padding: 12px 20px;
+        }
       }
 
       button.course-accordion {
@@ -880,6 +964,10 @@ section.about {
     display: flex;
     padding: 40px 30px;
 
+    @media screen and (max-width: 992px) {
+      padding: 0;
+    }
+
 
     .content {
       width: 100%;
@@ -887,11 +975,19 @@ section.about {
       align-items: center;
       // padding-left: 35px;
 
+      @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+      }
+
       .left-col {
         width: 50%;
 
         @media screen and (max-width: 1500px) {
           width: 70%;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
         }
 
         .img {
@@ -902,6 +998,7 @@ section.about {
             object-position: center;
             height: 100%;
             width: 100%;
+
           }
         } 
       }
@@ -918,6 +1015,15 @@ section.about {
 
         @media screen and (max-width: 1200px) {
           padding: 50px;
+        }
+
+        @media screen and (max-width: 992px) {
+          position: relative;
+          width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+          padding: 50px 15px;
         }
 
         h2.sec-title {
@@ -945,6 +1051,10 @@ section.about {
           @media screen and (max-width: 1200px) {
             padding-right: 50px;
           }
+
+          @media screen and (max-width: 600px) {
+            padding-right: 30px;
+          }
         }
   
         .btn-container {
@@ -958,6 +1068,10 @@ section.about {
           position: absolute;
           // top: 60px;
           right: 50px;
+
+          @media screen and (max-width: 600px) {
+            right: 15px;
+          }
         }
   
       }
@@ -1014,17 +1128,29 @@ section.form {
     .formcontent {
       padding: 0 50px;
 
+      @media screen and (max-width: 992px) {
+        padding: 0 10px;
+      }
+
 
       .content {
 
         h2.sec-title {
           margin-bottom: 5px;
           color: $f;
+
+          @media screen and (max-width: 992px) {
+            text-align: center;
+          }
         }
   
         h1.sec-title {
           font-weight: bold;
           color: $f;
+
+          @media screen and (max-width: 992px) {
+            text-align: center;
+          }
         }
       }
 
@@ -1036,6 +1162,12 @@ section.form {
         justify-self: center;
         max-width: 675px;
 
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+          margin: 0 auto;
+        }
+
         .top-col {
           // width: 60%;  
           max-width: 675px;
@@ -1046,6 +1178,7 @@ section.form {
           
           @media screen and (max-width: 992px) {
             flex-direction: column;
+            width: 100%;
           }
 
           .input {
@@ -1097,6 +1230,11 @@ section.form {
       
       .f-submit {
         margin-top: 50px;
+
+        @media screen and (max-width: 992px) {
+          display: flex;
+          justify-content: center;
+        }
       }
     }
   }

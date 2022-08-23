@@ -155,6 +155,11 @@ h1 {
     @media screen and (max-width: 1200px) {
       font-size: 60px;
     }
+
+    
+    @media screen and (max-width: 500px) {
+      font-size: 45px;
+    }
   }
 }
 
@@ -190,6 +195,10 @@ h2 {
        font-size: 30px;
      }
 
+     @media screen and (max-width: 500px) {
+      font-size: 25px;
+    }
+
   }
 }
 
@@ -214,6 +223,10 @@ h3 {
      @media screen and (max-width: 1200px) {
        font-size: 20px;
      }
+
+     @media screen and (max-width: 500px) {
+      font-size: 18px;
+    }
   }
 }
 .sec-title.underline {
@@ -259,6 +272,10 @@ p {
 
   @media screen and (max-width: 1400px) {
     font-size: 16px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
   }
 
 
